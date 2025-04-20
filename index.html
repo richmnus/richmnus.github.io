@@ -14,42 +14,52 @@
 </head>
 
 <body>
-  <include src="nav.html"></include>
+  <div class="container">
 
-  <div class="container text-center">
-    <div class="row">
-      <div class="col">
-        Column 1 of 2
+    <div class="sticky-top z-3">
+      <div class="row">
+        <div class="col-2 border">
+          Logo
+        </div>
+        <div class="col-10 border">
+          <div class="z-0">
+            Image
+          </div>
+        </div>
       </div>
-      <div class="col">
-        Column 2 of 2
-      </div>
-    </div>
-    <div class="row">
-      <div class="col">
-        Column 1 of 3
-      </div>
-      <div class="col">
-        Column 2 of 3
-      </div>
-      <div class="col">
-        Column 3 of 3
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-3">
-        <include src="sidebar.html"></include>
-      </div>
-      <div class="col-9">
-        <include src="articles/test/content.html"></include>
+
+      <div class="row">
+        <div class="col-2 border">
+          &nbsp;
+        </div>
+        <div class="col-10 border">
+          Navbar
+        </div>
       </div>
     </div>
+
+    <div class="row">
+      <div class="col-3 border">
+        <div class="position-fixed">
+          Sidebar
+          <include src="sidebar.html"></include>
+        </div>
+      </div>
+      <div class="col-9 border">
+        <div class="z-3" id="content"></div>
+      </div>
+    </div>
+
+    <div class="sticky-bottom">
+      <include src="footer.html"></include>
+    </div>
+
   </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <script src="https://martinus.uk/scripts/htmlincludejs/index.js" crossorigin="anonymous"></script>
 </body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="scripts/htmlincludejs/index.js" crossorigin="anonymous"></script>
+<script src="scripts/functions.js" crossorigin="anonymous"></script>
 
 </html>
